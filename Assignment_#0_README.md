@@ -1,5 +1,24 @@
 #A MarkDown File
 
+##Title
+###SubTitle_1
+###SubTitle_2
+
+or
+This is an H1
+=============
+
+This is an H2
+-------------
+
+ 
+---
+***
+===
+
+
+
+
 ##[PARAGRAPHS AND LINE BREAKS][1]  
 >A paragraph is simply one or more consecutive lines of text,
 separated by one or more blank lines.
@@ -46,6 +65,7 @@ Column1     | Column2
 5     | md
 
 ##Code
+An example of C Programing Language:  
 
 ```c
 #include <stdio.h>
@@ -53,25 +73,7 @@ main()
 {
   printf("Hello World!\n");
 }
-```
-##Title
-##SubTitle_1
-##SubTitle_2
-###SubSubTitle_2.1
-###SubSubTitle_2.2
-or
-This is an H1
-=============
-
-This is an H2
--------------
-
- 
----
-***
-===
-
-
+```  
 
 [1]: http://daringfireball.net/projects/markdown/syntax
 
