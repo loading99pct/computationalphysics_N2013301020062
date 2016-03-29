@@ -3,6 +3,29 @@
 Created on Wed Mar 23 01:12:47 2016
 @author: Wang Ziang
 """
+
+"""
+This function solves a system of first-order differential equations
+(or A first-order differential equation, of course) of the form:
+
+-----------------------------------------------
+
+                X'[t] = F[t,X]
+                
+-----------------------------------------------
+                
+    where  X = (x1,x2,...,xn)T
+    F:  X -> Y
+        (x1,x2,...,xn)T -> (y1,y2,...,yn)T
+        where:
+        y1 = f1(t,x1,x2,...,xn),
+        y1 = f1(t,x1,x2,...,xn),
+        .
+        .
+        yn = f1(t,x1,x2,...,xn) 
+"""
+
+
 '''
 in the following method:
 xi could be a scalar, or a vector
@@ -85,22 +108,68 @@ __methodDictionary={\
 
 
 def dSolve(func, x0, tMax, stepSize, method = "RK4"):
+    """
+    dSolve solves a system of first-order differential equations
+    (or A first-order differential equation, of course) of the form:
+    
+    -----------------------------------------------
+    
+                    X'[t] = F[t,X]
+                    
+    -----------------------------------------------
+    (
+                    
+        where  X = (x1,x2,...,xn)T
+        F:  X -> Y
+            (x1,x2,...,xn)T -> (y1,y2,...,yn)T
+            where:
+            y1 = f1(t,x1,x2,...,xn),
+            y1 = f1(t,x1,x2,...,xn),
+            .
+            .
+            yn = f1(t,x1,x2,...,xn) 
+    )
+    
+    with initial value X[0] =x0,
+    (
+        !!! if xi is a vector, 
+        it should be given by the data structure "array" defined in numpy package
+        e.g. numpy.array([x1,x2,x3])
+    )
+    
+    from t = 0 to t = tMax,
+    
+    with fixed step size = stepSize,
+    
+    using method selected from __methodDictionary
+    
+    
+    Output: [state0, state1,... ]
+        where statei has the form [ti, xi] for a ODE, 
+            or [ti, array([x1i,x2i...])] for s system of ODEs
+                    
+    """
     times = int(math.ceil(float(tMax) / stepSize))
     methodFunc = __methodDictionary[method]
     toNext = lambda state: methodFunc(state, func, stepSize)
     return nestList(toNext, makeState(0, x0), times)
 
+def getColumn(table,i):
+    "get the ith column of the table\
+    without security "
+    return [elem[i-1] for elem in table]
+
 def getTList(result):
-    "get the time list T of the result"
-    return [elem[0] for elem in result]
+    "get the time list T of the result given by function dSolve\
+    without security "
+    return getColumn(result, 1)
 
 def getXiList(result, i):
-    "get the list of i-th component Xi of the result"
+    "get the list of i-th component Xi of the result given by function dSolve\
+    without security "
     if type(result[0][1]) == np.ndarray:
-        return [elem[1][i-1] for elem in result]
+        return getColumn( getColumn(result,2), i-1)      
+        #return [elem[1][i-1] for elem in result]
     else:
-        return [elem[1] for elem in result]
-
-def getStateI(resule, i):
-    "haven't done yet"
-    return 0
+        return getColumn(result,2)         
+        #return [elem[1] for elem in result]
