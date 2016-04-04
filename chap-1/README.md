@@ -256,7 +256,7 @@ plt.show()
 ```
 
 ![](https://raw.githubusercontent.com/loading99pct/computationalphysics_N2013301020062/master/chap-1/airDragedFallingFunc3%20-%20cmp2.png)
-可以看出，即使在步长极大时，梯形法和RK4方法仍符合的很好第四题演示dSolve求解多元ODE，图片仅为示意，坐标从略
+可以看出，即使在步长极大时，RK4方法仍符合的很好第四题演示dSolve求解多元ODE，图片仅为示意，坐标从略
 
 ```python
 
