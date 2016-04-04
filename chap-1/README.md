@@ -181,7 +181,7 @@ dSolveAndDetailedPlotAndHoldOn
 def dSolveAndDetailedPlotAndHoldOn(func, x0, tMax, stepSize, method,\
  labelList, xLabel = "", yLabel = "", titleLabel = ""): 
 用于详细画图，略
-## 本章习题 ##
+# 本章习题 #
 第一题自由下落，仅作演示辅助函数dSolveAndFastPlot （简记为 dfp），速度随时间变化如下（仅作演示，坐标从略）：
 
 ```python
