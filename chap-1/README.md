@@ -231,8 +231,8 @@ plt.show()
 
 ![ds](https://raw.githubusercontent.com/loading99pct/computationalphysics_N2013301020062/master/chap-1/airDragedFallingFunc3%20-%20cmp1.png)
 
-随着步长减小，解从单侧逐渐靠近真实值。
-
+随着步长减小，解从单侧逐渐靠近真实值。  
+  
 相同步长，当采用不同方法时：
 
 
@@ -270,8 +270,8 @@ dfp(decayFunc4(1.,1.), array([1.5,0.]), 10.,0.05,"RK4")
     [[0, array([ 1.5,  0. ])], [0.5, array([ 0.91015625,  0.453125  ])], [1.0, array([ 0.55225627,  0.54988607])], [1.5, array([ 0.33509299,  0.50048224])], [2.0, array([ 0.20332466,  0.40490404])], [2.5, array([ 0.12337147,  0.30710495])], [3.0, array([ 0.07485821,  0.22361079])], [3.5, array([ 0.04542178,  0.15829392])], [4.0, array([ 0.02756061,  0.1097693 ])], [4.5, array([ 0.01672297,  0.07493041])], [5.0, array([ 0.01014701,  0.05051732])], [5.5, array([ 0.00615691,  0.03371768])], [6.0, array([ 0.00373583,  0.0223188 ])], [6.5, array([ 0.0022668 ,  0.01467093])], [7.0, array([ 0.00137543,  0.00958666])], [7.5, array([ 0.00083457,  0.0062324 ])], [8.0, array([ 0.00050639,  0.00403375])], [8.5, array([ 0.00030726,  0.00260053])], [9.0, array([ 0.00018644,  0.00167075])], [9.5, array([ 0.00011313,  0.00107008])], [10.0, array([  6.86412513e-05,   6.83466537e-04])]]
     
 
-![](https://raw.githubusercontent.com/loading99pct/computationalphysics_N2013301020062/master/chap-1/decayFunc4-1.png)
-第五题，达到平衡态：
+![](https://raw.githubusercontent.com/loading99pct/computationalphysics_N2013301020062/master/chap-1/decayFunc4-1.png)  
+第五题，达到平衡态的演示：
 
 ```python
 def decayFunc5(tauA, tauB):
