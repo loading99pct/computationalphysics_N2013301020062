@@ -5,8 +5,8 @@ Homework of Computational Physics, 2016
    
 [Assignment_#3](https://github.com/loading99pct/computationalphysics_N2013301020062/tree/master/Assignment_3)
 
-[Assignment_#4_chap 1](https://github.com/loading99pct/computationalphysics_N2013301020062/tree/master/chap-1)   
+[Assignment_#4&5_chap 1](https://github.com/loading99pct/computationalphysics_N2013301020062/tree/master/chap-1)   
    
-[Assignment_#5_chap2.1](https://github.com/loading99pct/computationalphysics_N2013301020062/tree/master/Chap_2.1)   
+[Assignment_#6_chap2.1](https://github.com/loading99pct/computationalphysics_N2013301020062/tree/master/Chap_2.1)   
    
-[Assignment_#6_chap2.1](https://github.com/loading99pct/computationalphysics_N2013301020062/tree/master/Chap_2.2)
+[Assignment_#7_chap2.1](https://github.com/loading99pct/computationalphysics_N2013301020062/tree/master/Chap_2.2)
