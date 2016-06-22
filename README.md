@@ -14,3 +14,9 @@ Homework of Computational Physics, 2016
 [Assignment_#8_chap3.1](https://github.com/loading99pct/computationalphysics_N2013301020062/tree/master/Chap_3.1)   
    
 [Assignment_#9_chap3.2](https://github.com/loading99pct/computationalphysics_N2013301020062/tree/master/Chap_3.2)      
+    
+    
+    
+[Assignment_#11_chap4.1](https://github.com/loading99pct/computationalphysics_N2013301020062/tree/master/Chap_4.1)        
+    
+
