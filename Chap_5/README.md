@@ -14,15 +14,15 @@ plateLen平板的半长， 这里首先取2
 
 对于不同的模拟尺度大小，分别迭代，如下动画所示：   
 
-length = 60   
+length = 60(动画加载需要时间)   
 
 ![](https://raw.githubusercontent.com/loading99pct/computationalphysics_N2013301020062/master/Chap_5/pic/iter.gif)   
 
-length = 80   
+length = 80(动画加载需要时间)      
 
 ![](https://raw.githubusercontent.com/loading99pct/computationalphysics_N2013301020062/master/Chap_5/pic/iter2.gif)   
 
-length = 120   
+length = 120(动画加载需要时间)      
 
 ![](https://raw.githubusercontent.com/loading99pct/computationalphysics_N2013301020062/master/Chap_5/pic/iter3.gif)   
 
@@ -42,7 +42,7 @@ plateLen:板的半长:这里首先取:10
 
 ![](https://raw.githubusercontent.com/loading99pct/computationalphysics_N2013301020062/master/Chap_5/pic/i2.png)   
 
-反复迭代到接近不动点时的状态   
+反复迭代到接近不动点时的状态(动画加载需要时间)      
 
 ![](https://raw.githubusercontent.com/loading99pct/computationalphysics_N2013301020062/master/Chap_5/pic/iter4.gif)   
 
