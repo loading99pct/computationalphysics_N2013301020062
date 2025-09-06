@@ -1,5 +1,5 @@
-# computationalphysics_N2013301020062
-Assignment of Computational Physics, 2016  
+# computationalphysics
+Computational Physics Class, 2016  
    
 [Assignment_#3](https://github.com/loading99pct/computationalphysics_N2013301020062/tree/master/Assignment_3)
 
